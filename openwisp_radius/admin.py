@@ -666,6 +666,8 @@ class OrganizationRadiusSettingsInline(admin.StackedInline):
                     'sms_verification',
                     'sms_sender',
                     'allowed_mobile_prefixes',
+                    'login_url',
+                    'status_url',
                 )
             },
         ),
