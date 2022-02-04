@@ -816,7 +816,7 @@ class AbstractRadiusPostAuth(OrgMixin, UUIDModel):
 
 _get_csv_file_private_storage = PrivateFileSystemStorage(
     location=settings.PRIVATE_STORAGE_ROOT,
-    base_url=urljoin(app_settings.RADIUS_API_BASEURL, app_settings.CSV_URL_PATH),
+    base_url=urljoin(app_settings.RADIUS_API_BASEURL, f'/api/v1/{app_settings.CSV_URL_PATH}'),
 )
 
 
